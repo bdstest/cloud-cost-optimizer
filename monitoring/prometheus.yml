@@ -1,0 +1,32 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+rule_files:
+  - "alerts/*.yml"
+
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets: []
+
+scrape_configs:
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+
+  - job_name: 'cost-optimizer-api'
+    static_configs:
+      - targets: ['api:8080']
+    metrics_path: '/metrics'
+    scrape_interval: 30s
+
+  - job_name: 'timescaledb'
+    static_configs:
+      - targets: ['timescaledb:5432']
+    scrape_interval: 60s
+
+  - job_name: 'redis'
+    static_configs:
+      - targets: ['redis:6379']
+    scrape_interval: 30s

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Hybrid Cloud Cost Optimizer - Enterprise-grade multi-cloud cost optimization platform"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>Hybrid Cloud Cost Optimizer</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <style>
+      :root {
+        --primary-color: #2c3e50;
+        --secondary-color: #3498db;
+        --success-color: #27ae60;
+        --warning-color: #f39c12;
+        --danger-color: #e74c3c;
+        --dark-color: #34495e;
+      }
+      
+      body {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      
+      .dashboard-container {
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        margin: 20px;
+        padding: 30px;
+      }
+      
+      .metric-card {
+        background: white;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+      }
+      
+      .metric-card:hover {
+        transform: translateY(-5px);
+      }
+      
+      .metric-value {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      
+      .metric-label {
+        color: #6c757d;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+      
+      .cost-savings {
+        color: var(--success-color);
+      }
+      
+      .cost-increase {
+        color: var(--danger-color);
+      }
+      
+      .chart-container {
+        position: relative;
+        height: 400px;
+        margin: 20px 0;
+      }
+      
+      .recommendation-card {
+        border-left: 4px solid var(--secondary-color);
+        background: #f8f9fa;
+        padding: 15px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+      }
+      
+      .status-indicator {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 8px;
+      }
+      
+      .status-healthy { background-color: var(--success-color); }
+      .status-warning { background-color: var(--warning-color); }
+      .status-danger { background-color: var(--danger-color); }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
