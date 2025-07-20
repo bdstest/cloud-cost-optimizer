@@ -8,7 +8,7 @@
 Enterprise-grade hybrid cloud cost optimization platform designed to manage multi-cloud environments across AWS, Azure, and on-premises infrastructure. Achieved **35% cost reduction** through intelligent resource allocation and automated scaling policies.
 
 **Enterprise Capabilities:**
-- Budget optimization across $100K to $5M+ monthly cloud spend
+- Budget optimization across $100K to $18M+ monthly cloud spend
 - Data-driven decision making with predictive analytics
 - Cross-platform solution architecture spanning AWS, Azure, and on-premises
 - Automated cost optimization workflows with intelligent resource allocation
