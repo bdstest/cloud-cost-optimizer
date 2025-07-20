@@ -450,8 +450,3 @@ curl -X POST \
      "http://localhost:8080/api/v1/recommendations/rec_001/apply"
 ```
 
-## Support
-
-- **API Issues**: api-support@company.com
-- **Documentation**: https://docs.cloud-cost-optimizer.com
-- **Status Page**: https://status.cloud-cost-optimizer.com
